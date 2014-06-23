@@ -10,7 +10,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew cleanup && brew update && brew doctor
 
 # Install cask
-if [ ! $(brew tap | grep phinze/cask) ]; then
+if [ ! $(brew tap | grep caskroom/cask) ]; then
   brew tap caskroom/cask
 fi
 brew install brew-cask
